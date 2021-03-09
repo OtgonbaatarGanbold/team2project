@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams 2 project</title>
+    <title>Teams_#2 project</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <header class="bg-gray-400 h-auto w-full flex flex-col">
+
+        <div class="w-full h-8 items-center flex inline-flex md:visible invisible">
+            <div class="w-1/2"></div>
+            <div class="w-1/2 h-6 flex inline-flex items-center justify-center">
+                <div class="flex flex-grow h-6 w-20 bg-white mx-2 rounded-md items-center justify-center">weather</div>
+                <div class="flex flex-grow h-6 w-20 bg-white mx-2 rounded-md items-center justify-center">calendar</div>
+                <div class="flex flex-grow h-6 w-20 bg-white mx-2 rounded-md items-center justify-center">exchange</div>
+            </div>
+        </div>
+
+        <div class="h-24 w-full flex inline-flex">
+            <div class="w-1/2 h-24 flex items-center md:text-5xl text-3xl md:ml-10 ml-6 bg-gray-400">Teams_#2</div>
+            <div class="w-1/2 h-24 md:invisible visible flex items-center justify-end" id="dropdown">
+                <button class=" mr-6 hover:text-gray-600  focus:outline-none">
+                    <svg class="flex w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M1 4h2v2H1V4zm4 0h14v2H5V4zM1 9h2v2H1V9zm4 0h14v2H5V9zm-4 5h2v2H1v-2zm4 0h14v2H5v-2z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="h-8 w-full bg-black flex inline-flex items-center justify-center md:visible invisible">
+            <div class="w-full flex flex-inline h-6">
+                <a href="#" class="flex flex-grow w-20 bg-gray-400 mx-1 rounded-md items-center justify-center">ehlel</a>
+                <a href="#" class="flex flex-grow w-20 bg-gray-400 mx-1 rounded-md items-center justify-center">ehlel</a>
+                <a href="#" class="flex flex-grow w-20 bg-gray-400 mx-1 rounded-md items-center justify-center">ehlel</a>
+                <a href="#" class="flex flex-grow w-20 bg-gray-400 mx-1 rounded-md items-center justify-center">ehlel</a>
+            </div>
+            <input type="text" class="w-64 h-6 bg-indigo-400 text-black foucs:outline-none rounded mx-1 foces-outline-none" placeholder=" Search">
+        </div>
+
+    </header>
+
+    <div class="flex w-full md:hidden">
+        <div class="w-1/2 h-auto opacity-30 bg-white"></div>
+        <ul class="w-1/2 flex flex-col items-end justify-center py-1 hidden bg-gray-300 pr-1" id="dropdown-content">
+            <a class="bg-blue-300 rounded-md w-44 h-8 pl-3 flex items-center my-1" href="#"><li class="justify-center items-center">ehlel</li></a>
+            <a class="bg-blue-300 rounded-md w-44 h-8 pl-3 flex items-center my-1" href="#"><li class="justify-center items-center">ehlel</li></a>
+            <a class="bg-blue-300 rounded-md w-44 h-8 pl-3 flex items-center my-1" href="#"><li class="justify-center items-center">ehlel</li></a>
+            <a class="bg-blue-300 rounded-md w-44 h-8 pl-3 flex items-center my-1" href="#"><li class="justify-center items-center">ehlel</li></a>
+
+            <input type="text" class="pl-3 rounded-md h-8 w-44" placeholder="Search">
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { 
+            const dropdownContent = document.getElementById('dropdown-content');
+            document.getElementById('dropdown').addEventListener('click', () => {
+                dropdownContent.classList.toggle('hidden');
+            })
+        });
+        </script>
 </body>
 </html>
