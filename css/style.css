@@ -585,6 +585,16 @@ video {
   }
 }
 
+.someHeight {
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .someHeight {
+    height: 81.7vw;
+  }
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -183909,4 +183919,3 @@ video {
             animation: bounce 1s infinite;
   }
 }
-  

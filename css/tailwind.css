@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
+
+.someHeight {
+    height: auto;
+}
+
+@screen md {
+    
+    .someHeight {
+        height: 81.7vw;
+    }
+
+}
+
 @tailwind utilities;
